@@ -1,17 +1,12 @@
 package com.example.myapplication
 
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.ImageView
-import android.content.Intent
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.content.res.ResourcesCompat
-
-
-
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,20 +14,13 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val imageView: ImageView = findViewById(R.id.imageView6)
+        // Delay in milliseconds (e.g., 3000ms = 3 seconds)
+        val delayMillis = 3000L
 
-
-        imageView.setOnClickListener {
-            // Create an Intent to start Screen02
-            val intent = Intent(this, Screen03::class.java)
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, Screen01Activity::class.java)
             startActivity(intent)
-
-
-
-
-
-
-
-        }
+            finish() // Optional: Finish MainActivity so the user can't navigate back
+        }, delayMillis)
     }
 }

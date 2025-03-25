@@ -8,6 +8,23 @@
     tools:context=".Home">
 
     <TextView
+        android:id="@+id/textView46"
+        android:layout_width="382dp"
+        android:layout_height="79dp"
+        android:fontFamily="cursive"
+        android:text="SMOOTHIEE"
+        android:textAlignment="textStart"
+        android:textColor="#150531"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
         android:id="@+id/textView8"
         android:layout_width="284dp"
         android:layout_height="35dp"
@@ -20,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.283"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.11" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -46,6 +63,67 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.167"
         app:srcCompat="@drawable/food_vector_removebg_preview" />
+    <!-- Horizontal ScrollView with Buttons -->
+    <HorizontalScrollView
+        android:id="@+id/categoryScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/categoryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="105dp"
+                android:layout_height="49dp"
+                android:layout_margin="4dp"
+                android:text="BerryMix"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="108dp"
+                android:layout_height="49dp"
+                android:layout_margin="4dp"
+                android:textSize="12sp"
+                android:text="PineBliss"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="115dp"
+                android:layout_height="49dp"
+                android:layout_margin="4dp"
+                android:text="StrawBana"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_margin="4dp"
+                android:textSize="12sp"
+                android:text="WaterMint"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="108dp"
+                android:layout_height="49dp"
+                android:layout_margin="4dp"
+                android:text="KiwiMix"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
 
     <TextView
         android:id="@+id/textView9"
@@ -200,21 +278,6 @@
         app:layout_constraintVertical_bias="0.66"
         app:srcCompat="@drawable/banana" />
 
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="362dp"
-        android:layout_height="71dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Search Smoothie"
-        android:textColor="#837E7E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533" />
-
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="34dp"
@@ -263,5 +326,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942"
         app:srcCompat="@drawable/baseline_person_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

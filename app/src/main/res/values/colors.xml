@@ -3,4 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightpurple">#E4673AB7</color>
+    <color name="purple">#E49771D9</color>
+    <color name="lightwhite">#F2F1F1</color>
+    <color name="darkBlue">#320D73</color>
+    <color name="darkPurple">#B29771D9</color>
+
+
+
 </resources>

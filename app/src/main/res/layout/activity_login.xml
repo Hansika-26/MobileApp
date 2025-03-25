@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/abstract1"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".Login">
@@ -19,23 +21,40 @@
         android:textColor="#320D73"
         android:textSize="38sp" />
 
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:fontFamily="cursive"
+        android:text="SMOOTHIEE"
+        android:textAlignment="center"
+        android:textColor="#150531"
+        android:textSize="42sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="248dp"
-        android:layout_height="309dp"
+        android:layout_width="348dp"
+        android:layout_height="250dp"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/icon_removebg_preview" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="333dp"
-        android:layout_height="48dp"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="@string/enter_your_name"
         android:inputType="text"
-        android:paddingStart="35dp"
-        android:text="@string/enter_your_name"
-        android:textColor="#979292" />
+        android:paddingStart="39dp"
+        android:textColor="#575656" />
 
 
     <!-- Horizontal LinearLayout for ImageView and EditText -->
@@ -56,12 +75,12 @@
         <EditText
             android:id="@+id/editTextTextPassword2"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="46dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="text"
-            android:text="@string/enter_your_password"
-            android:textColor="#979292" />
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:textColor="#575656" />
     </LinearLayout>
 
     <TextView
@@ -70,19 +89,28 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="60dp"
         android:text="Forget Password"
+        android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textStyle="italic" />
 
     <Button
         android:id="@+id/Login_Button"
-        android:layout_width="181dp"
+        android:layout_width="185dp"
         android:layout_height="57dp"
         android:layout_marginTop="30dp"
         android:text="Login"
         android:textColor="#FFFFFF"
         android:textSize="17dp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If have an Account. Sign In"
+        android:textAlignment="center"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>

@@ -2,8 +2,14 @@
     <string name="app_name">My Application</string>
     <string name="register">Register</string>
     <string name="name">Name</string>
-    <string name="welcome_back">Welcome Back!</string>
+    <string name="welcome_back">Welcome To</string>
     <string name="enter_your_name">Enter Your Name</string>
     <string name="enter_your_password">Enter Your Password</string>
     <string name="good_morning_nsri_lanka">Good Morning!\nSri Lanka</string>
+    <string name="Next">Next</string>
+    <string name="Submit">Submit\n</string>
+    <string name="Address">Enter your Email Address</string>
+    <string name="phone">Enter your phone</string>
+    <string name="ConfirPasswrd">Confirm Password</string>
+
 </resources>

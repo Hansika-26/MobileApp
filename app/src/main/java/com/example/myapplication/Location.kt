@@ -6,8 +6,6 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Location : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,16 +14,26 @@ class Location : AppCompatActivity() {
         setContentView(R.layout.activity_location)
 
         val backArrow = findViewById<ImageView>(R.id.back_Arrow)
+        val buttonSubmit = findViewById<Button>(R.id.buttonSubmit)  // Get the Submit button
 
+        // Navigate back to Cart page
         backArrow.setOnClickListener {
-            navigateBackToCartPage("Cart")
+            navigateBackToCartPage()
         }
 
-
+        // Navigate to Home page when Submit button is clicked
+        buttonSubmit.setOnClickListener {
+            navigateToLastPage()
+        }
     }
 
-    private fun navigateBackToCartPage(s: String) {
-        val intent = Intent(this, Cart::class.java)
+    private fun navigateBackToCartPage() {
+        val intent = Intent(this, Cart::class.java)  // Replace with your Cart activity
+        startActivity(intent)
+    }
+
+    private fun navigateToLastPage() {
+        val intent = Intent(this, ThankActivity::class.java)
         startActivity(intent)
     }
 }

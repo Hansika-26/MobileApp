@@ -20,7 +20,7 @@ class Exit : AppCompatActivity() {
 
         Button.setOnClickListener {
             // Create an Intent to navigate to the Home activity
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 
